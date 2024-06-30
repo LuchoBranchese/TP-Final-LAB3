@@ -56,11 +56,13 @@ function NuevoProducto() {
         if (rta == "OK") {
           alert("Producto ingresado");
           window.location.href = "index.html";
-          loadProducts();
         }
+       
       })
       .catch((error) => console.error("Error:", error));
+      
   }
+  
 }
 
 function Borrar(idprod) {
@@ -76,14 +78,16 @@ function Borrar(idprod) {
         idcod: idProd,
       }),
     })
-      .then((response) => response.json)
-      .then((data) => console.log(data))
-      .catch((error) => console.error("Error:", error));
-    alert("Producto eliminado.");
-  } else {
-  }
-
-  loadProducts();
+      .then((response) => response.text())
+      .then((rta) => {
+        if (rta == "OK") {
+          console.log(rta);
+          alert("Producto eliminadoooo");
+          loadProducts();
+        }        
+      })
+      .catch((error) => console.error("Error:", error));      
+  }   
 }
 
 function Editar(idproducto) {
