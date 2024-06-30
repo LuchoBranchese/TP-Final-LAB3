@@ -82,7 +82,7 @@ function Borrar(idprod) {
       .then((rta) => {
         if (rta == "OK") {
           console.log(rta);
-          alert("Producto eliminadoooo");
+          alert("Producto eliminado");
           loadProducts();
         }        
       })
