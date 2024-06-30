@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Final</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body onload="loadProducts()">
+    <header>
+      <h1>Trabajo Final</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="product.html">Nuevo/Editar Producto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Lista de Productos</h2>
+
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio ARS</th>
+            <th>Precio USD</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody id="body"></tbody>
+      </table>
+
+      <button onclick="location.href='product.html'">Añadir Producto</button>
+
+      
+    </main>
+    <footer>
+      <p>Luciano Branchese - Trabajo Final LAB3</p>
+    </footer>
+    <script src="/scripts.js"></script>
+  </body>
+</html>
