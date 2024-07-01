@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gestionar Productos</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body onload="FormStorage()">
     <header>
@@ -27,7 +27,7 @@
           <input type="number" id="productPriceARS" required />
           <label for="productPrice">Precio USD:</label>
           <input type="number" id="productPriceUSD" required />
-          <label for="productDate">Fecha:</label>
+          <label for="productDate">Fecha: (yyyy-mm-dd)</label>
           <input type="datetime" id="productDate" required />
           <button type="submit" id="submitBtn" onclick="NuevoProducto()">
             Guardar
